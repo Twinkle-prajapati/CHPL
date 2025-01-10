@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="main">
+            <div id="music_photo">
+                <img src="Assets/m1.webp" height="100px">
+            </div>
+
+
+            <div class="music_details">
+                <div id="music_name">
+                    <h3>Code PodCast</h3>
+                </div>
+                <div id="music_singer">
+                    <p>Banda OneBitMusic</p>
+                </div>
+            </div>
+
+
+            <div class="buttons">
+                <div id="prev">
+                    <i class="fa fa-step-backward"></i>
+                </div>
+                <div id="playpausebutton">
+                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                </div>
+                <div id="next">
+                    <i class="fa fa-step-forward"></i>
+                </div>
+            </div>
+
+
+
+            <div class="audio-container">
+                <audio id="audio" controls>
+                    <source src="Assets/Songs/s1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
