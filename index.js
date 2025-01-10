@@ -6,7 +6,7 @@ let dice2 = document.getElementById('dice2')
 let dice1_score = document.getElementById('dice1_score')
 let dice2_score = document.getElementById('dice2_score')
 let winner = document.getElementById('winner')
-
+let reset = document.getElementById('reset')
 
 // check winner
 function displayWinner(dice_value1, dice_value2, player1, player2) {
@@ -45,8 +45,8 @@ function rollDice() {
     let [player1, player2] = getPlayerNames(player1_input, player2_input)
 
     // rolling the dice
-    dice1.innerHTML = `<img src="Assets/diceroll2.gif" alt="Rolling...">`;
-    dice2.innerHTML = `<img src="Assets/diceroll2.gif" alt="Rolling...">`;
+    dice1.innerHTML = `<img src="Assets/diceroll2.gif">`;
+    dice2.innerHTML = `<img src="Assets/diceroll2.gif">`;
 
     // getting value for dice
     let dice_value1 = Math.floor(Math.random() * 6) + 1
@@ -65,4 +65,16 @@ function rollDice() {
 
 }
 
+// reset
+function resetGame(){
+    player1_input.value = "";
+    player2_input.value = "";
+    dice1.innerHTML = `<img src="Assets/dice6.png">`;
+    dice2.innerHTML = `<img src="Assets/dice6.png">`;
+    dice1_score.innerHTML = `<p>Score: </p>`;
+    dice2_score.innerHTML = `<p>Score: </p>`;
+    winner.innerHTML = `<h3> </h3>`
+}
+
 rollDice_Button.addEventListener('click', rollDice)
+reset.addEventListener('click',resetGame)

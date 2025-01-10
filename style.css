@@ -80,6 +80,7 @@ input {
 
 
 button {
+    width: 150px;
     background-color: #115678;
     color: white;
     border: none;
@@ -89,6 +90,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 25px;
 }
 
 
@@ -97,6 +99,12 @@ button {
     cursor: not-allowed;
 }
 
+#button-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
 button:hover {
     background-color: #2c79cb;
